@@ -26,8 +26,6 @@ body, html{
 .calculator{
     margin-top: 50px;
 
-    
-
 }
 
 .screen-area{
@@ -78,6 +76,8 @@ body, html{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 button{
