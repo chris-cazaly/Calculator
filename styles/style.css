@@ -4,6 +4,8 @@
 
 *{
     font-family: sans-serif;
+    padding:0;
+    margin: 0;
 
 }
 body, html{
@@ -29,25 +31,47 @@ body, html{
 }
 
 .screen-area{
-    background-color: rgb(146, 39, 39);
+    background-color: rgb(230, 230, 230);
     height:150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .primary{
-    background-color:rgba(197, 216, 191, 0.637);
     height: 60%;
+    font-size: 2em;
+
 }
 
 .secondary{
-    background-color:rgba(216, 191, 216, 0.692);
     height: 40%;
+    font-size: 1.4em;
 }
 
 .primary, .secondary{
     width: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
+
+/* ----------------  TEXT ---------------- */
+
+.primary-text, .secondary-text{
+    margin: 10px;
+    
+}
+
+.primary-text{
+    color: rgb(59, 59, 59);
+}
+
+.secondary-text{
+    color: rgb(117, 117, 117);
+}
+
+/* ---------------- BUTTONS ---------------- */
 
 .buttons-area{
     background-color: rgb(230, 230, 230);
