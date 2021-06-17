@@ -1,5 +1,20 @@
 :root{
+    --calc-bg-color: rgb(230, 230, 230);
+    --body-bg-color: rgb(65, 65, 65);
+    --button-bg-color: white;
 
+    --primary-text-color: rgb(65, 65, 65);
+    --secondary-text-color: rgb(158, 158, 158);
+
+    --button-hover-color: rgb(245, 245, 245);
+    --operator-hover-color:  rgb(183, 212, 255);
+    --delete-hover-color:  rgb(255, 175, 175);
+    --equals-hover-color:  rgb(194, 255, 194);
+
+    --button-active-color: rgb(230, 230, 230);
+    --operator-active-color:  rgb(130, 180, 255);
+    --delete-active-color:  rgb(255, 108, 108);
+    --equals-active-color:  rgb(121, 255, 121);
 }
 
 *{
@@ -16,7 +31,7 @@ body, html{
 .container{
     width:100vw;
     height:100vh;
-    background-color: rgb(65, 65, 65);
+    background-color: var(--body-bg-color);
 
     display: flex;
 
@@ -29,7 +44,7 @@ body, html{
 }
 
 .screen-area{
-    background-color: rgb(230, 230, 230);
+    background-color: var(--calc-bg-color);
     height:150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -62,17 +77,17 @@ body, html{
 }
 
 .primary-text{
-    color: rgb(59, 59, 59);
+    color: var(--primary-text-color);
 }
 
 .secondary-text{
-    color: rgb(117, 117, 117);
+    color: var(--secondary-text-color);
 }
 
 /* ---------------- BUTTONS ---------------- */
 
 .buttons-area{
-    background-color: rgb(230, 230, 230);
+    background-color: var(--calc-bg-color);
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 
@@ -86,18 +101,15 @@ button{
     
     user-select:none;
 
-    border: 2px rgb(230, 230, 230) solid;
+    border: 2px var(--calc-bg-color) solid;
     border-radius: 10px;
 
-    background-color: white;
+    background-color: var(--button-bg-color);
 
     font-size: 1.3em;
-    color:rgb(145, 145, 135);
+    color: var(--body-bg-color);
 }
 
-button:hover{
-    background-color: rgba(235, 235, 235, 0.022);
-}
 
 #EQUALS{
     width: 100%;
@@ -105,14 +117,35 @@ button:hover{
     grid-column-end: 4;
 }
 
+
+button:hover{
+    background-color: var(--button-hover-color);
+}
+
 .operator:hover{
-    background-color: rgb(155, 187, 255, 0.22);
+    background-color: var(--operator-hover-color);
 }
 
 #EQUALS:hover{
-    background-color: rgba(61, 212, 23, 0.22);
+    background-color: var(--equals-hover-color);
 }
 
 #DEL:hover, #CLEAR:hover{
-    background-color: rgba(255, 0, 0, 0.22);
+    background-color: var(--delete-hover-color);
+}
+
+button:active{
+    background-color: var(--button-active-color);
+}
+
+.operator:active{
+    background-color: var(--operator-active-color);
+}
+
+#EQUALS:active{
+    background-color: var(--equals-active-color);
+}
+
+#DEL:active, #CLEAR:active{
+    background-color: var(--delete-active-color);
 }
