@@ -1,10 +1,21 @@
 :root{
+    /* --- BODY --- */
+
+    --body-bg-color: #2d2d2d;
+
+    /* --- CALCULATOR --- */
+
     --calc-bg-color: rgb(230, 230, 230);
-    --body-bg-color: rgb(65, 65, 65);
-    --button-bg-color: white;
+
+
+    --shadow-color: rgb(0, 0, 0);
 
     --primary-text-color: rgb(65, 65, 65);
     --secondary-text-color: rgb(158, 158, 158);
+
+    /* --- BUTTONS --- */
+
+    --button-bg-color: white;
 
     --button-hover-color: rgb(245, 245, 245);
     --operator-hover-color:  rgb(183, 212, 255);
@@ -26,21 +37,23 @@
 body, html{
     padding: 0;
     margin: 0;
+    background-color: var(--body-bg-color);
 }
 
 .container{
     width:100vw;
-    height:100vh;
-    background-color: var(--body-bg-color);
 
     display: flex;
-
     justify-content: center;
 }
 
 .calculator{
     margin-top: 50px;
 
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 10px var(--shadow-color);
+    
 }
 
 .screen-area{
