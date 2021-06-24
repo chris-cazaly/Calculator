@@ -67,8 +67,8 @@ for (let i=0; i<special_operator_buttons.length; i++){
 
         switch (this_button.id){
 
-            case "CLEAR":       
-                                                    // < CLEAR button
+            case "CLEAR":        
+                                                   
                 primary_text.innerHTML = "";
                 secondary_text.innerHTML = "";
                 previous_button = "";
@@ -84,11 +84,33 @@ for (let i=0; i<special_operator_buttons.length; i++){
                 } 
                 else if (previous_button == "operator"){
                     del_amount = -3;                            // < operator: delete 3
-                }       
+                }
+                
+                // reassign previous number
+                // if prev_but == " " then set prev_but to operator
+                // else it's a number
+                // !!!!!!!!                  !!!!!!!!
+                // !!!!!!!! NEED TO COMPLETE !!!!!!!!
+                // !!!!!!!!                  !!!!!!!!
                     
                 primary_text.innerHTML = primary_text.innerHTML.slice(0, del_amount);
 
                 break;
+
+            case "EQUALS":
+
+                // CHECK THAT PREVIOUS INPUT IS A NUMBER
+                // - if not, then delete the last operator
+
+                // EVALUATE
+                secondary_text.innerHTML = primary_text.innerHTML + " = " + eval(primary_text.innerHTML);
+                
+                primary_text.innerHTML = eval(primary_text.innerHTML);
+
+                
+                
+                break;
+                
             
         }
     });  
