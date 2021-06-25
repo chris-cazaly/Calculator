@@ -1,4 +1,4 @@
-:root{
+:root {
     /* --- BODY --- */
 
     --body-bg-color: #2d2d2d;
@@ -18,63 +18,66 @@
     --button-bg-color: white;
 
     --button-hover-color: rgb(245, 245, 245);
-    --operator-hover-color:  rgb(183, 212, 255);
-    --delete-hover-color:  rgb(255, 175, 175);
-    --equals-hover-color:  rgb(194, 255, 194);
+    --operator-hover-color: rgb(183, 212, 255);
+    --delete-hover-color: rgb(255, 175, 175);
+    --equals-hover-color: rgb(194, 255, 194);
 
     --button-active-color: rgb(230, 230, 230);
-    --operator-active-color:  rgb(130, 180, 255);
-    --delete-active-color:  rgb(255, 108, 108);
-    --equals-active-color:  rgb(121, 255, 121);
+    --operator-active-color: rgb(130, 180, 255);
+    --delete-active-color: rgb(255, 108, 108);
+    --equals-active-color: rgb(121, 255, 121);
 }
 
-*{
+* {
     font-family: sans-serif;
-    padding:0;
+    padding: 0;
     margin: 0;
 
 }
-body, html{
+
+body,
+html {
     padding: 0;
     margin: 0;
     background-color: var(--body-bg-color);
 }
 
-.container{
-    width:100vw;
+.container {
+    width: 100vw;
 
     display: flex;
     justify-content: center;
 }
 
-.calculator{
+.calculator {
     margin-top: 50px;
 
     border-radius: 10px;
 
     box-shadow: 3px 3px 10px var(--shadow-color);
-    
+
 }
 
-.screen-area{
+.screen-area {
     background-color: var(--calc-bg-color);
-    height:150px;
+    height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.primary{
+.primary {
     height: 60%;
     font-size: 2em;
 
 }
 
-.secondary{
+.secondary {
     height: 40%;
     font-size: 1.4em;
 }
 
-.primary, .secondary{
+.primary,
+.secondary {
     width: 100%;
 
     display: flex;
@@ -84,22 +87,23 @@ body, html{
 
 /* ----------------  TEXT ---------------- */
 
-.primary-text, .secondary-text{
+.primary-text,
+.secondary-text {
     margin: 10px;
-    
+
 }
 
-.primary-text{
+.primary-text {
     color: var(--primary-text-color);
 }
 
-.secondary-text{
+.secondary-text {
     color: var(--secondary-text-color);
 }
 
 /* ---------------- BUTTONS ---------------- */
 
-.buttons-area{
+.buttons-area {
     background-color: var(--calc-bg-color);
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -108,11 +112,11 @@ body, html{
     border-bottom-right-radius: 10px;
 }
 
-button{
+button {
     width: 100px;
     height: 100px;
-    
-    user-select:none;
+
+    user-select: none;
 
     border: 2px var(--calc-bg-color) solid;
     border-radius: 10px;
@@ -124,41 +128,43 @@ button{
 }
 
 
-#EQUALS{
+#EQUALS {
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 4;
 }
 
 
-button:hover{
+button:hover {
     background-color: var(--button-hover-color);
 }
 
-.operator:hover{
+.operator:hover {
     background-color: var(--operator-hover-color);
 }
 
-#EQUALS:hover{
+#EQUALS:hover {
     background-color: var(--equals-hover-color);
 }
 
-#DEL:hover, #CLEAR:hover{
+#DEL:hover,
+#CLEAR:hover {
     background-color: var(--delete-hover-color);
 }
 
-button:active{
+button:active {
     background-color: var(--button-active-color);
 }
 
-.operator:active{
+.operator:active {
     background-color: var(--operator-active-color);
 }
 
-#EQUALS:active{
+#EQUALS:active {
     background-color: var(--equals-active-color);
 }
 
-#DEL:active, #CLEAR:active{
+#DEL:active,
+#CLEAR:active {
     background-color: var(--delete-active-color);
 }
